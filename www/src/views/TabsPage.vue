@@ -3,19 +3,20 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <ion-icon aria-hidden="true" :icon="triangle" />
-          <ion-label>Tab 1</ion-label>
+        <ion-tab-button tab="HomePage" href="/tabs/HomePage">
+          <ion-icon aria-hidden="true" :icon="homeOutline" />
         </ion-tab-button>
 
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
-          <ion-icon aria-hidden="true" :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
+        <ion-tab-button tab="Product" href="/tabs/Product">
+          <ion-icon aria-hidden="true" :icon="searchOutline" />
         </ion-tab-button>
 
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon aria-hidden="true" :icon="square" />
-          <ion-label>Tab 3</ion-label>
+        <ion-tab-button tab="ShoppingCart" href="/tabs/ShoppingCart">
+          <ion-icon aria-hidden="true" :icon="cartOutline" />
+        </ion-tab-button>
+
+        <ion-tab-button tab="UserCenter" href="/tabs/UserCenter">
+          <ion-icon aria-hidden="true" :icon="personOutline" />
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -24,5 +25,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { cartOutline, personOutline, homeOutline, searchOutline } from 'ionicons/icons';
 </script>
